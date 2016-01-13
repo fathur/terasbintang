@@ -1,0 +1,8 @@
+//$blue   : #283593 !default;
+$blue   : #1A237E !default;
+$green  : #43A047 !default;
+$red    : #F44336 !default;
+$white  : #FFFFFF !default;
+
+$light-blue : lighten($blue, 5%);
+$dark-blue : darken($blue, 5%);

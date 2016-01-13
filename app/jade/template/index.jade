@@ -1,0 +1,92 @@
+extends ../_layout.jade
+
+block title
+    title Teras Bintang
+
+block content
+    .container
+        .row
+            //- content
+            .col-md-9
+
+                //- Bikin kepo
+                //- http://stackoverflow.com/questions/28539610/bootstrap-carousel-animate-top-to-bottom-instead-of-left-to-right
+                .row
+                    .col-md-12 Kepo
+
+                //- Slider
+                .row
+                    .col-md-12
+                        #slider.carousel.slide(data-ride='carousel')
+                            // Indicator
+                            ol.carousel-indicators
+                                li(data-target='slider', data-slide-to='0').active
+                                li(data-target='slider', data-slide-to='1')
+                                li(data-target='slider', data-slide-to='2')
+
+                            .carousel-inner(role='listbox')
+                                .item.active
+                                    img(src='...' alt='...')
+                                    .carousel-caption ...
+                                .item
+                                    img(src='...' alt='...')
+                                    .carousel-caption ...
+                                .item
+                                    img(src='...' alt='...')
+                                    .carousel-caption ...
+
+                            a.left.carousel-control(href='#slider', role='button', data-slide='prev')
+                                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                span.sr-only Previous
+                            a.right.carousel-control(href='#slider', role='button', data-slide='next')
+                                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                span.sr-only Next
+
+
+
+                //- artikel dan rightsidebar
+                .row
+                    .col-md-4
+                        .panel.panel-sidebar-left
+                            .panel-heading terpopuler
+                            .panel-body
+                                ul.list-unstyled
+                                    each val in [1,2,3,4,5,6,7,8,9,10   ]
+                                        li.item
+                                            a(href='#')
+                                                .thumb
+                                                    img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/wordpress-popular-posts/6783-featured-70x75.jpg')
+                                                .text Tempat Berkumpulnya Tokoh Radikal, Begini Komentar Warga di Area Lokasi Masjid Al-Fataa
+                    .col-md-8
+                        .panel.panel-content
+                            .panel-heading TERKINI
+                            .panel-body
+                                each val in [1,2,3,4]
+                                    article.item
+                                        .date 31 Januari 2012
+                                        h4
+                                            a(href='#') Diam-diam, Jokowi Kebut Tol Jakarta-Brebes, Sebelum Mudik Lebaran Siap Pakai
+                                        .thumb
+                                            img(src='http://www.terasbintang.com/wp-content/uploads/2015/11/jokowi-tol-230x130.jpg').img-rounded
+                                        .excerpt
+                                            div TERASBINTANG.com – Menteri Pekerjaan Umum dan Perumahan Rakyat (PUPR), Basuki Hadimuljono, mengatakan pihaknya tengah mempercepat pembangunan jalan tol Pejagan-Pemalang. Jalan tol ini ditargetkan rampung sebelum musim mudik Lebaran 2016. “Sebelum mudik Lebaran jalan tol ini sudah selesai. Sekarang di lapangan, pekerjaan terus dikebut,” ujar Basuki. Berdasarkan data Badan Pengatur Jalan Tol (BPJT), pekerjaan Jalan To
+                                        hr
+
+            //- right sidebar
+            .col-md-3
+                .row.mbot-20
+                    .col-sm-12
+                        img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/2015/11/aha.gif')
+                .row
+                    .col-sm-12
+                        .panel.panel-sidebar-right
+                            .panel-heading sisi lain
+                            .panel-body
+                                ul.list-unstyled
+                                    each val in [1,2,3,4,5]
+                                        li.item
+                                            a(href='#')
+                                                .text Siap Rilis Album di 4 Negara, Hijau Daun Mau Go Internasional?
+                                                .thumb
+                                                    img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/2015/12/angel-karamoy-230x130.jpg')
+                                            hr

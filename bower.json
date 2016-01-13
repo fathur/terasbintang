@@ -1,0 +1,29 @@
+{
+  "name": "terasbintang",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "fathur"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "terasbintang"
+  ],
+  "homepage": "https://github.com/fathur/terasbintang",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.*",
+    "font-awesome": "~4.5.*",
+    "bootstrap": "~3.3.6"
+  }
+}
