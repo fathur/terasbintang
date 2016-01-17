@@ -5,6 +5,77 @@
   right: 0;
   z-index: 10; }
 
+.navbar-teras {
+  background-color: #EBECEE;
+  border-color: #d9dbdf;
+  padding: 10px 0;
+  height: 65px; }
+  .navbar-teras .navbar-brand {
+    color: #1A237E; }
+    .navbar-teras .navbar-brand:hover, .navbar-teras .navbar-brand:focus {
+      color: #111754;
+      background-color: transparent; }
+  .navbar-teras .navbar-text {
+    color: #1A237E; }
+  .navbar-teras .navbar-nav > li > a {
+    color: #1A237E;
+    font-weight: 700;
+    background-color: #AFB0B8;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 13px; }
+    .navbar-teras .navbar-nav > li > a:hover, .navbar-teras .navbar-nav > li > a:focus {
+      color: #FFFFFF;
+      background-color: #1A237E; }
+  .navbar-teras .navbar-nav > .active > a, .navbar-teras .navbar-nav > .active > a:hover, .navbar-teras .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #1A237E; }
+  .navbar-teras .navbar-nav > .disabled > a, .navbar-teras .navbar-nav > .disabled > a:hover, .navbar-teras .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent; }
+  .navbar-teras .navbar-nav.search {
+    margin-right: 0px;
+    margin-top: 4px; }
+  .navbar-teras .navbar-toggle {
+    border-color: #ddd; }
+    .navbar-teras .navbar-toggle:hover, .navbar-teras .navbar-toggle:focus {
+      background-color: #ddd; }
+    .navbar-teras .navbar-toggle .icon-bar {
+      background-color: #888; }
+  .navbar-teras .navbar-collapse,
+  .navbar-teras .navbar-form {
+    border-color: #d9dbdf; }
+  .navbar-teras .navbar-nav > .open > a, .navbar-teras .navbar-nav > .open > a:hover, .navbar-teras .navbar-nav > .open > a:focus {
+    background-color: #1A237E;
+    color: #FFFFFF; }
+  @media (max-width: 767px) {
+    .navbar-teras .navbar-nav .open .dropdown-menu > li > a {
+      color: #1A237E; }
+      .navbar-teras .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-teras .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #FFFFFF;
+        background-color: #1A237E; }
+    .navbar-teras .navbar-nav .open .dropdown-menu > .active > a, .navbar-teras .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-teras .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #FFFFFF;
+      background-color: #1A237E; }
+    .navbar-teras .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-teras .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-teras .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #ccc;
+      background-color: transparent; } }
+  .navbar-teras .navbar-link {
+    color: #1A237E; }
+    .navbar-teras .navbar-link:hover {
+      color: #FFFFFF; }
+  .navbar-teras .btn-link {
+    color: #1A237E; }
+    .navbar-teras .btn-link:hover, .navbar-teras .btn-link:focus {
+      color: #FFFFFF; }
+    .navbar-teras .btn-link[disabled]:hover, .navbar-teras .btn-link[disabled]:focus,
+    fieldset[disabled] .navbar-teras .btn-link:hover,
+    fieldset[disabled] .navbar-teras .btn-link:focus {
+      color: #ccc; }
+
 .rolling {
   background: url("../img/bikin-kepo.jpg") no-repeat;
   background-color: #00AC58;

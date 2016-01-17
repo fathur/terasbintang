@@ -3,6 +3,32 @@ $blue   : #1A237E !default;
 $green  : #43A047 !default;
 $red    : #F44336 !default;
 $white  : #FFFFFF !default;
+$gray   : #AFB0B8 !default;
 
 $light-blue : lighten($blue, 5%);
 $dark-blue : darken($blue, 5%);
+
+
+$navbar-teras-color:             $blue !default;
+$navbar-teras-bg:                #EBECEE !default;
+$navbar-teras-border:            darken($navbar-teras-bg, 6.5%) !default;
+
+// Navbar links
+$navbar-teras-link-color:                $blue !default;
+$navbar-teras-link-hover-color:          $white !default;
+$navbar-teras-link-hover-bg:             $blue !default;
+$navbar-teras-link-active-color:         $white !default;
+$navbar-teras-link-active-bg:            $blue !default;
+$navbar-teras-link-disabled-color:       #ccc !default;
+$navbar-teras-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-teras-brand-color:               $navbar-teras-link-color !default;
+$navbar-teras-brand-hover-color:         darken($navbar-teras-brand-color, 10%) !default;
+$navbar-teras-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-teras-toggle-hover-bg:           #ddd !default;
+$navbar-teras-toggle-icon-bar-bg:        #888 !default;
+$navbar-teras-toggle-border-color:       #ddd !default;
+
