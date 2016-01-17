@@ -11,7 +11,8 @@
     border-top-right-radius: 10px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'HelveticaLTStd-BoldCond', sans-serif;
+
 
     + .panel-collapse > .panel-body {
       border-top-color: $blue;
@@ -75,7 +76,7 @@
     border-top-right-radius: 10px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'HelveticaLTStd-BoldCond', sans-serif;
 
     + .panel-collapse > .panel-body {
       border-top-color: $blue;
@@ -92,6 +93,7 @@
     border-bottom-right-radius: 10px;
 
     li.item {
+      font-family: 'HelveticaLTStd-Bold', sans-serif;
       margin-bottom: 15px;
       min-height: 80px;
       //border-bottom: 1px solid darken($white, 10%);

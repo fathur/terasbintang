@@ -65,12 +65,13 @@ html(lang='id-ID')
                                     a(href='#')= val
 
                     ul.nav.navbar-nav.navbar-right.search
-                        .form-group.has-feedback
-                            input.form-control(id='search'
-                                aria-describedby='search-text'
-                                placeholder='Search')
-                            .glyphicon.glyphicon-search.form-control-feedback(aria-hidden='true')
-                            #search-text.sr-only Search
+                        form(method='get' action='search.html')
+                            .form-group.has-feedback
+                                input.form-control(name='s' id='search'
+                                    aria-describedby='search-text'
+                                    placeholder='Search')
+                                .glyphicon.glyphicon-search.form-control-feedback(aria-hidden='true')
+                                #search-text.sr-only Search
 
 
         block content

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../font/HelveticaLTStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-BoldCond';
+  src: url('../font/HelveticaLTStd-BoldCond.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-BoldObl';
+  src: url('../font/HelveticaLTStd-BoldObl.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Roman';
+  src: url('../font/HelveticaLTStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Novecentowide-Bold';
+  src: url('../font/Novecentowide-Bold-webfont.eot');
+  src: url('../font/Novecentowide-Bold-webfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../font/Novecentowide-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../font/Novecentowide-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../font/Novecentowide-Bold-webfont.svg#svgNovecentowideBold') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Novecentowide-Normal';
+  src: url('../font/Novecentowide-Normal-webfont.eot');
+  src: url('../font/Novecentowide-Normal-webfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/Novecentowide-Normal-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/Novecentowide-Normal-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../font/Novecentowide-Normal-webfont.svg#svgNovecentowideBold') format('svg'); /* Legacy iOS */
+}

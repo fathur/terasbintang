@@ -39,11 +39,13 @@
             <li><a href="#">Tips</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right search">
-            <div class="form-group has-feedback">
-              <input id="search" aria-describedby="search-text" placeholder="Search" class="form-control">
-              <div aria-hidden="true" class="glyphicon glyphicon-search form-control-feedback"></div>
-              <div id="search-text" class="sr-only">Search</div>
-            </div>
+            <form method="get" action="search.html">
+              <div class="form-group has-feedback">
+                <input name="s" id="search" aria-describedby="search-text" placeholder="Search" class="form-control">
+                <div aria-hidden="true" class="glyphicon glyphicon-search form-control-feedback"></div>
+                <div id="search-text" class="sr-only">Search</div>
+              </div>
+            </form>
           </ul>
         </div>
       </nav>
