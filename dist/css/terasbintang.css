@@ -1,3 +1,10 @@
+#header-menu.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+
 .rolling {
   background: url("../img/bikin-kepo.jpg") no-repeat;
   background-color: #00AC58;
@@ -121,6 +128,12 @@
 
 body {
   background-image: url("../img/bg.jpg"); }
+
+.mtop-15 {
+  margin-top: 15px; }
+
+.mtop-20 {
+  margin-top: 20px; }
 
 .mbot-15 {
   margin-bottom: 15px; }

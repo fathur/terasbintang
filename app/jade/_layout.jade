@@ -38,10 +38,15 @@ html(lang='id-ID')
         <![endif]-->
 
     body
-        .container
+        .container.mbot-20.mtop-20#head-top
+            .row
+                .col-md-4
+                    img(src="/img/logo.png")
+                .col-md-8
+        .container#header-menu
             //- Class navbar-default harus diganti dengan navbar-terasbintang
-            nav.navbar.navbar-default
-                .container-fluid
+            nav.navbar.navbar-default.navbar-static
+                .containerxxx
                     .navbar-header
                         button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
                             span.sr-only Toggle navigation
@@ -81,6 +86,7 @@ html(lang='id-ID')
         <script>window.jQuery || document.write('<script src="/lib/jquery/dist/jquery.min.js"><\/script>')</script>
         script(type='text/javascript', src='/lib/bootstrap/dist/js/bootstrap.min.js')
         script(type='text/javascript', src='/lib/bootstrap3-ie10-viewport-bug-workaround/ie10-viewport-bug-workaround.js')
+        script(type='text/javascript', src='/js/terasbintang.js')
 
-        block scripts
+    block scripts
         block script
