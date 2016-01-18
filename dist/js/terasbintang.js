@@ -3,3 +3,7 @@ $('#header-menu').affix({
         top: $('#head-top').height() + 40
     }
 });
+
+$('.navbar-teras .navbar-nav > li > a').css({
+    width: '136px'
+});

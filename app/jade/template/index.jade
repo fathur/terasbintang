@@ -8,77 +8,79 @@ block content
         .row
             //- content
             .col-md-9
+                .widget-area-1
 
-                //- Bikin kepo
-                //- http://stackoverflow.com/questions/28539610/bootstrap-carousel-animate-top-to-bottom-instead-of-left-to-right
-                .row.hidden-sm.hidden-xs.mbot-20
-                    .col-md-12
-                        .rolling
-                            .row
-                                .col-md-4
-                                .col-md-8
-                                    #rolling-text.carousel.slide.vertical(
-                                        data-ride='carousel'
-                                    )
-                                        .carousel-inner
-                                            .item.active
-                                                //img(src='http://placehold.it/770x120&amp;text=First+Slide')
-                                                h3 Surya Paloh dan HM Prasetyo Didesak Segera Dijadikan Tersangka, Soal Kasus Bansos Sumut
-                                            each val in [1,2,3]
-                                                //.item
-                                                //    h3 Helloooo
-                                                    // img(src='http://placehold.it/770x120&amp;text=Next+Slide')
+                    //- Bikin kepo
+                    //- http://stackoverflow.com/questions/28539610/bootstrap-carousel-animate-top-to-bottom-instead-of-left-to-right
+                    .row.hidden-sm.hidden-xs.mbot-20
+                        .col-md-12
+                            .rolling
+                                .row
+                                    .col-md-4
+                                    .col-md-8
+                                        #rolling-text.carousel.slide.vertical(
+                                            data-ride='carousel'
+                                        )
+                                            .carousel-inner
+                                                .item.active
+                                                    //img(src='http://placehold.it/770x120&amp;text=First+Slide')
+                                                    h3 Surya Paloh dan HM Prasetyo Didesak Segera Dijadikan Tersangka, Soal Kasus Bansos Sumut
+                                                each val in [1,2,3]
+                                                    //.item
+                                                    //    h3 Helloooo
+                                                        // img(src='http://placehold.it/770x120&amp;text=Next+Slide')
 
-                                        //a.left.carousel-control(href='#rolling-text', role='button', data-slide='prev')
-                                        //    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                                        //    span.sr-only Previous
-                                        //a.right.carousel-control(href='#rolling-text', role='button', data-slide='next')
-                                        //    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                                        //    span.sr-only Next
+                                            //a.left.carousel-control(href='#rolling-text', role='button', data-slide='prev')
+                                            //    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                            //    span.sr-only Previous
+                                            //a.right.carousel-control(href='#rolling-text', role='button', data-slide='next')
+                                            //    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                            //    span.sr-only Next
 
-                //- Slider
-                .row
-                    .col-md-12
-                        #slider.carousel.slide(data-ride='carousel')
-                            // Indicator
-                            ol.carousel-indicators
-                                li(data-target='slider', data-slide-to='0').active
-                                li(data-target='slider', data-slide-to='1')
-                                li(data-target='slider', data-slide-to='2')
+                    //- Slider
+                    .row
+                        .col-md-12
+                            #slider.carousel.slide(data-ride='carousel')
+                                // Indicator
+                                ol.carousel-indicators
+                                    li(data-target='slider', data-slide-to='0').active
+                                    li(data-target='slider', data-slide-to='1')
+                                    li(data-target='slider', data-slide-to='2')
 
-                            .carousel-inner(role='listbox')
-                                .item.active
-                                    img(src='...' alt='...')
-                                    .carousel-caption ...
-                                .item
-                                    img(src='...' alt='...')
-                                    .carousel-caption ...
-                                .item
-                                    img(src='...' alt='...')
-                                    .carousel-caption ...
+                                .carousel-inner(role='listbox')
+                                    .item.active
+                                        img(src='...' alt='...')
+                                        .carousel-caption ...
+                                    .item
+                                        img(src='...' alt='...')
+                                        .carousel-caption ...
+                                    .item
+                                        img(src='...' alt='...')
+                                        .carousel-caption ...
 
-                            a.left.carousel-control(href='#slider', role='button', data-slide='prev')
-                                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                                span.sr-only Previous
-                            a.right.carousel-control(href='#slider', role='button', data-slide='next')
-                                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                                span.sr-only Next
+                                a.left.carousel-control(href='#slider', role='button', data-slide='prev')
+                                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                    span.sr-only Previous
+                                a.right.carousel-control(href='#slider', role='button', data-slide='next')
+                                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                    span.sr-only Next
 
 
 
                 //- artikel dan left sidebar
                 .row
-                    .col-md-4.hidden-sm.hidden-xs
-                        .panel.panel-sidebar-left
-                            .panel-heading terpopuler
-                            .panel-body
-                                ul.list-unstyled
-                                    each val in [1,2,3,4,5,6,7,8,9,10   ]
-                                        li.item
-                                            a(href='#')
-                                                .thumb
-                                                    img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/wordpress-popular-posts/6783-featured-70x75.jpg')
-                                                .text Tempat Berkumpulnya Tokoh Radikal, Begini Komentar Warga di Area Lokasi Masjid Al-Fataa
+                    .widget-area-2
+                        .col-md-4.hidden-sm.hidden-xs
+                            .panel.panel-sidebar-left
+                                .panel-heading terpopuler
+                                .panel-body
+                                    ul.list-unstyled
+                                        each val in [1,2,3,4,5,6,7,8,9,10   ]
+                                            li.item
+                                                a(href='#')
+                                                    .thumb
+                                                        img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/wordpress-popular-posts/6783-featured-70x75.jpg')
+                                                    .text Tempat Berkumpulnya Tokoh Radikal, Begini Komentar Warga di Area Lokasi Masjid Al-Fataa
                     .col-md-8
                         .panel.panel-content
                             .panel-heading TERKINI
@@ -87,7 +89,7 @@ block content
                                     article.item
                                         .date 31 Januari 2012
                                         h4
-                                            a(href='#') Diam-diam, Jokowi Kebut Tol Jakarta-Brebes, Sebelum Mudik Lebaran Siap Pakai
+                                            a(href='single.html') Diam-diam, Jokowi Kebut Tol Jakarta-Brebes, Sebelum Mudik Lebaran Siap Pakai
                                         .thumb
                                             img(src='http://www.terasbintang.com/wp-content/uploads/2015/11/jokowi-tol-230x130.jpg').img-rounded
                                         .excerpt

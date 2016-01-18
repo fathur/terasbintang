@@ -41,7 +41,8 @@ html(lang='id-ID')
         .container.mbot-20.mtop-20#head-top
             .row
                 .col-md-4
-                    img(src="/img/logo.png")
+                    a(href='index.html')
+                        img(src="/img/logo.png")
                 .col-md-8
         .container#header-menu
             //- Class navbar-default harus diganti dengan navbar-terasbintang
@@ -56,7 +57,7 @@ html(lang='id-ID')
                 .navbar-collapse.collapse#navbar
                     ul.nav.navbar-nav
                         //- Loop menu
-                        each val, i in ['Berita','Hiburan','Bintang','Gaya Hidup', 'Tips']
+                        each val, i in ['Berita','Hiburan','Bintang','Gaya Hidup', 'Tips','Video']
                             if i == 0
                                 li.active
                                     a(href='#')= val

@@ -316,3 +316,26 @@ body {
     font-size: 12px; }
   .panel-footer > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #43A047; }
+
+.panel-single > .panel-heading {
+  color: #FFFFFF;
+  font-size: 12px;
+  background-color: #1A237E;
+  border-color: #1A237E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .panel-single > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #1A237E; }
+  .panel-single > .panel-heading .badge {
+    color: #43A047;
+    background-color: #43A047; }
+
+.panel-single > .panel-body {
+  background-color: #FFFFFF;
+  border-radius: 10px; }
+  .panel-single > .panel-body h1, .panel-single > .panel-body h2 {
+    color: #1A237E;
+    font-family: 'HelveticaLTStd-Bold', sans-serif; }
+
+.panel-single > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #43A047; }
