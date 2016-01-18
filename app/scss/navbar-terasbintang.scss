@@ -9,10 +9,19 @@
 // Default navbar
 .navbar-teras {
   font-family: 'HelveticaLTStd-BoldCond', sans-serif;
-  background-color: $navbar-teras-bg;
+
+  @media screen and (max-width: 767px) {
+    background-color: $blue;
+  }
+
+  @media (min-width: 768px) {
+    background-color: $navbar-teras-bg;
+  }
+
   border-color: $navbar-teras-border;
   padding: 10px 0;
   height: 65px;
+  z-index: 99;
 
   .navbar-brand {
     color: $navbar-teras-brand-color;
@@ -40,10 +49,18 @@
       font-size: 13px;
       text-align: center;
 
+      @media screen and (max-width: 767px){
+        margin: 10px 10px;
+      }
+
       &:hover,
       &:focus {
         color: $navbar-teras-link-hover-color;
         background-color: $navbar-teras-link-hover-bg;
+
+        @media screen and (max-width: 767px){
+          background-color: $green;
+        }
       }
     }
     > .active > a {
@@ -52,6 +69,10 @@
       &:focus {
         color: $navbar-teras-link-active-color;
         background-color: $navbar-teras-link-active-bg;
+
+        @media screen and (max-width: 767px){
+          background-color: $green;
+        }
       }
     }
     > .disabled > a {
@@ -67,6 +88,18 @@
       margin-right: 0px;
       margin-top: 4px;
       font-family: 'HelveticaLTStd-Roman', sans-serif;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0px;
+
+
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        .form-control {
+          width: 175px;
+        }
+      }
     }
   }
 
@@ -84,6 +117,11 @@
   .navbar-collapse,
   .navbar-form {
     border-color: $navbar-teras-border;
+
+    @media screen and (max-width: 767px){
+      background-color: $blue;
+      border: 1px solid $gray;
+    }
   }
 
   // Dropdown menu items

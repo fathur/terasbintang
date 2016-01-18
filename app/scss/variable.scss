@@ -28,7 +28,7 @@ $navbar-teras-brand-hover-color:         darken($navbar-teras-brand-color, 10%) 
 $navbar-teras-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-teras-toggle-hover-bg:           #ddd !default;
-$navbar-teras-toggle-icon-bar-bg:        #888 !default;
-$navbar-teras-toggle-border-color:       #ddd !default;
+$navbar-teras-toggle-hover-bg:           darken($blue, 10%) !default;
+$navbar-teras-toggle-icon-bar-bg:        lighten($blue, 80%) !default;
+$navbar-teras-toggle-border-color:       lighten($blue, 10%) !default;
 
