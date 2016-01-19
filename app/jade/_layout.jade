@@ -60,10 +60,14 @@ html(lang='id-ID')
                         each val, i in ['Berita','Hiburan','Bintang','Gaya Hidup', 'Tips','Video']
                             if i == 0
                                 li.active
-                                    a(href='#')= val
+                                    a(href='category.html')= val
                             else
                                 li
-                                    a(href='#')= val
+                                    a(href='category.html')= val
+
+                            if val == 'Video'
+                                li
+                                    a(href='video.html')= val
 
                     ul.nav.navbar-nav.navbar-right.search
                         form(method='get' action='search.html')

@@ -1,0 +1,68 @@
+extends ../_layout.jade
+
+block title
+    title Teras Bintang
+
+block content
+    .container
+        .row
+            //- content
+            .col-md-9
+                .panel.panel-category
+                    .panel-heading Artikel Hiburan
+                    .panel-body
+                        .row
+                            .col-md-6
+                                img.img-rounded.img-responsive(src='http://www.terasbintang.com/wp-content/uploads/2016/01/IMG_2784-640x480-640x360.jpg')
+                            .col-md-6
+                                a(href='#')
+                                    h3 Laudya Cynthia Bella Romantis Sekali Bareng Kekasihnya Keponakan Jusuf Kalla
+                                .date.small
+                                    | 17 Januari 2022 by Teras Bintang
+                                .excerpt
+                                    | TERASBINTANG.com — Kisah cinta Laudya Cynthia Bella dengan Afifuddin Kalla mulai mencuat ke publik ketika bintang film Surga Yang Tak Dirindukan mengunggah foto dirinya dengan Afifuddin di jejaring sosial media Instagram,beberapa waktu lalu. Kedekatan Laudya Cynthia Bella dengan salah satu keluarga Wakil Presiden RI Jusuf Kalla bukan isapan jempol belaka. Sabtu (16/1) kemarin, Bella datang…
+                                .tag
+                                    each val in [1,2,3,4,5]
+                                        a.label.label-primary(href='tag.html') kdkd
+
+
+                        ul.list-unstyled.list-category
+                            each val in [1,2,3,4,5,6,7,8,9,10]
+                                li
+                                    .row
+                                        .col-md-4
+                                            img.img-rounded.img-responsive(src='http://www.terasbintang.com/wp-content/uploads/2016/01/IMG_2784-640x480-640x360.jpg')
+                                        .col-md-8
+                                            a(href='#')
+                                                h3 Laudya Cynthia Bella Romantis Sekali Bareng Kekasihnya Keponakan Jusuf Kalla
+                                            .date.small
+                                                | 17 Januari 2022 by Teras Bintang
+                                            .excerpt
+                                                | TERASBINTANG.com — Kisah cinta Laudya Cynthia Bella dengan Afifuddin Kalla mulai mencuat ke publik ketika bintang film Surga Yang Tak Dirindukan mengunggah foto dirinya dengan Afifuddin di jejaring sosial media Instagram,beberapa waktu lalu. Kedekatan Laudya Cynthia Bella dengan salah satu keluarga Wakil Presiden RI Jusuf Kalla bukan isapan jempol belaka. Sabtu (16/1) kemarin, Bella datang…
+                                            .tag
+                                                each val in [1,2,3,4,5]
+                                                    span.label.label-primary kdkd
+                                        hr
+                        nav
+                            ul.pagination.pagination-lg
+                                li
+                                    a(href='#', aria-label='Previous')
+                                        span(aria-hidden='true') «
+                                li.active
+                                    a(href='#') 1
+                                li
+                                    a(href='#') 2
+                                li
+                                    a(href='#') 3
+                                li
+                                    a(href='#') 4
+                                li
+                                    a(href='#') 5
+                                li
+                                    a(href='#', aria-label='Next')
+                                        span(aria-hidden='true') »
+
+
+
+
+            include ../_sidebar_right.jade

@@ -1,0 +1,48 @@
+extends ../_layout.jade
+
+block title
+    title Teras Bintang
+
+block content
+    .container
+        .row
+            //- content
+            .col-md-9
+                .panel.panel-category
+                    .panel-heading Artikel Hiburan
+                    .panel-body
+                        .row
+                            each val in [1,2,3,4,5,6,7,8,9,10]
+                                .col-md-6
+                                    img.img-rounded.img-responsive(src='http://www.terasbintang.com/wp-content/uploads/2016/01/IMG_2784-640x480-640x360.jpg')
+                                    a(href='#')
+                                        h3 Laudya Cynthia Bella Romantis Sekali Bareng Kekasihnya Keponakan Jusuf Kalla
+                                    .date.small
+                                        | 17 Januari 2022 by Teras Bintang
+                                    .tag
+                                        each val in [1,2,3,4,5]
+                                            span.label.label-primary kdkd
+
+                        nav
+                            ul.pagination.pagination-lg
+                                li
+                                    a(href='#', aria-label='Previous')
+                                        span(aria-hidden='true') «
+                                li.active
+                                    a(href='#') 1
+                                li
+                                    a(href='#') 2
+                                li
+                                    a(href='#') 3
+                                li
+                                    a(href='#') 4
+                                li
+                                    a(href='#') 5
+                                li
+                                    a(href='#', aria-label='Next')
+                                        span(aria-hidden='true') »
+
+
+
+
+            include ../_sidebar_right.jade

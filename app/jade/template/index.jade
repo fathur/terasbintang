@@ -71,16 +71,28 @@ block content
                 .row
                     .widget-area-2
                         .col-md-4.hidden-sm.hidden-xs
-                            .panel.panel-sidebar-left
-                                .panel-heading terpopuler
-                                .panel-body
-                                    ul.list-unstyled
-                                        each val in [1,2,3,4,5,6,7,8,9,10   ]
-                                            li.item
-                                                a(href='#')
-                                                    .thumb
-                                                        img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/wordpress-popular-posts/6783-featured-70x75.jpg')
-                                                    .text Tempat Berkumpulnya Tokoh Radikal, Begini Komentar Warga di Area Lokasi Masjid Al-Fataa
+                            .row
+                                .col-sm-12
+                                    .panel.panel-sidebar-left
+                                        .panel-heading terpopuler
+                                        .panel-body
+                                            ul.list-unstyled
+                                                each val in [1,2,3,4,5,6,7,8,9,10   ]
+                                                    li.item
+                                                        a(href='#')
+                                                            .thumb
+                                                                img.img-responsive.img-rounded(src='http://www.terasbintang.com/wp-content/uploads/wordpress-popular-posts/6783-featured-70x75.jpg')
+                                                            .text Tempat Berkumpulnya Tokoh Radikal, Begini Komentar Warga di Area Lokasi
+                            .row
+                                .col-sm-12
+                                    .panel.panel-sidebar-left
+                                        .panel-heading Topik Pilihan
+                                        .panel-body
+                                            .list-group
+                                                each val in [1,2,3,4,5,6,7,8,9,10   ]
+                                                    a(href='#').list-group-item
+                                                        .text # Tempat Berkumpulnya
+
                     .col-md-8
                         .panel.panel-content
                             .panel-heading TERKINI

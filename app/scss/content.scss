@@ -20,6 +20,11 @@ body {
   margin-bottom: 20px;
 }
 
+.label-primary {
+  background-color: $blue;
+  margin-right: 5px;
+}
+
 .panel {
   background-color: transparent;
 }
@@ -166,6 +171,63 @@ body {
     h1, h2 {
       color: $blue;
       font-family: 'HelveticaLTStd-Bold', sans-serif;
+    }
+  }
+
+  & > .panel-footer {
+    + .panel-collapse > .panel-body {
+      border-bottom-color: $green;
+    }
+  }
+}
+
+
+.panel-category {
+
+
+  & > .panel-heading {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+    font-weight: bold;
+    font-family: 'HelveticaLTStd-BoldCond', sans-serif;
+    text-transform: uppercase;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: $blue;
+    }
+    .badge {
+      color: $green;
+      background-color: $green;
+    }
+  }
+
+  & > .panel-body {
+    background-color: $white;
+
+    h1, h2, h3 {
+      color: $blue;
+      font-family: 'HelveticaLTStd-Bold', sans-serif;
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+      & > h3 {
+        margin-top: -10px;
+        line-height: 1.4em;
+      }
+    }
+
+    ul.list-category {
+      & > li {
+        margin-top: 50px;
+      }
     }
   }
 

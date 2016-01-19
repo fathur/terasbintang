@@ -29,12 +29,12 @@
     border-bottom-right-radius: 10px;
 
     li.item {
-      margin-bottom: 15px;
-      min-height: 80px;
+      margin-bottom: 20px;
+      // min-height: 80px;
 
       & > a {
         color: $blue;
-        font-size: 12px;
+        // font-size: 12px;
         display: block;
         -o-transition: color .5s ease-out;
         -ms-transition:color .5s ease-out;
