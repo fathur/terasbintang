@@ -38,32 +38,49 @@ block content
                                             //    span.sr-only Next
 
                     //- Slider
-                    .row.hidden-xs
+                    .row.hidden-xs.mbot-20
                         .col-md-12
-                            #slider.carousel.slide(data-ride='carousel')
+                            #slider.carousel.slide.main-slider(data-ride='carousel')
                                 // Indicator
                                 ol.carousel-indicators
-                                    li(data-target='slider', data-slide-to='0').active
-                                    li(data-target='slider', data-slide-to='1')
-                                    li(data-target='slider', data-slide-to='2')
+                                    li(data-target='#slider', data-slide-to='0').active
+                                    li(data-target='#slider', data-slide-to='1')
+                                    li(data-target='#slider', data-slide-to='2')
 
                                 .carousel-inner(role='listbox')
                                     .item.active
-                                        img(src='...' alt='...')
-                                        .carousel-caption ...
+                                        .row
+                                            .col-md-8
+                                                img(src='img/slider1.png' alt='Slider 1').img-responsive
+                                            .col-md-4
+                                                .carousel-caption
+                                                    h3 Slider 1 adalah slider satu
+                                                    .excerpt TERASBINTANG.com – Terpidana kasus terorisme, Ali Imron,  menyesalkan munculnya komentar miri ...
                                     .item
-                                        img(src='...' alt='...')
-                                        .carousel-caption ...
-                                    .item
-                                        img(src='...' alt='...')
-                                        .carousel-caption ...
+                                        .row
+                                            .col-md-8
+                                                img(src='img/slider3.jpg' alt='Slider 1').img-responsive
+                                            .col-md-4
+                                                .carousel-caption
+                                                    h3 Slider 2 adalah slider satu
+                                                    .excerpt Specifies how many seconds or milliseconds a transition effect takes to complete. Default value is 0s, meaning there will be no effect
 
-                                a.left.carousel-control(href='#slider', role='button', data-slide='prev')
-                                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                                    span.sr-only Previous
-                                a.right.carousel-control(href='#slider', role='button', data-slide='next')
-                                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                                    span.sr-only Next
+                                    .item
+                                        .row
+                                            .col-md-8
+                                                img(src='img/slider2.jpg' alt='Slider 1').img-responsive
+                                            .col-md-4
+                                                .carousel-caption
+                                                    h3 Slider 4 adalah slider satu
+                                                    .excerpt W3Schools is optimized for learning, testing, and training.
+
+
+                                //a.left.carousel-control(href='#slider', role='button', data-slide='prev')
+                                //    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                                //    span.sr-only Previous
+                                //a.right.carousel-control(href='#slider', role='button', data-slide='next')
+                                //    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                                //    span.sr-only Next
 
 
 
