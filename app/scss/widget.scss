@@ -1,0 +1,13 @@
+.wpp-list {
+  list-style: none;
+  padding-left: 0px;
+
+  & > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    a {
+      color: $blue;
+    }
+  }
+}

@@ -15,6 +15,13 @@
   -ms-transition: 0.6s ease-in-out top;
   -o-transition: 0.6s ease-in-out top;
   transition: 0.6s ease-in-out top;
+
+  color: $white;
+  height: 80px;
+
+  a {
+    color: $white;
+  }
 }
 
 .carousel.vertical .active {
@@ -40,9 +47,4 @@
 
 .carousel.vertical .active.right {
   top: 120px;
-}
-
-.carousel.vertical .item {
-  color: $white;
-  height: 80px;
 }

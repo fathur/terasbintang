@@ -30,6 +30,16 @@
       color: $navbar-teras-brand-hover-color;
       background-color: $navbar-teras-brand-hover-bg;
     }
+
+    @media screen and (max-width: 767px) {
+
+      padding-top: 0px;
+      padding-bottom: 3px;
+
+      & > img {
+        height: 100%;
+      }
+    }
   }
 
   .navbar-text {
